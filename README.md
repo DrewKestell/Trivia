@@ -39,3 +39,6 @@ Question content is all video game themed, but questions of any type can easily 
 This is a very preliminary build of the game.  I'll probably revisit this at some point to continue working on it.
 
 Feel free to send questions/comments to drew.kestell@gmail.com
+
+KNOWN ISSUES:
+The high-scores data serialization/deserialization is causing the Unity plugin to crash on Web builds.  I need to add some platform specific scripting to customize the high-scores feature on Web build.  Two ideas: 1) disable high-scores on Web altogether. 2) save and load highscores from a database somewhere, perhaps a simple text file on my web server.
